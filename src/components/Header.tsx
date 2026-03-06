@@ -42,6 +42,18 @@ export function Header() {
               Местоимения
             </button>
             <button
+              onClick={() => scrollToSection("wordlist")}
+              className="text-sm tracking-wide hover:text-muted-foreground transition-colors"
+            >
+              1000 слов
+            </button>
+            <button
+              onClick={() => scrollToSection("webinar")}
+              className="text-sm tracking-wide hover:text-muted-foreground transition-colors"
+            >
+              Вебинар
+            </button>
+            <button
               onClick={() => scrollToSection("contact")}
               className="text-sm tracking-wide hover:text-muted-foreground transition-colors"
             >
@@ -81,6 +93,18 @@ export function Header() {
                 className="text-sm tracking-wide hover:text-muted-foreground transition-colors text-left"
               >
                 Местоимения
+              </button>
+              <button
+                onClick={() => scrollToSection("wordlist")}
+                className="text-sm tracking-wide hover:text-muted-foreground transition-colors text-left"
+              >
+                1000 слов
+              </button>
+              <button
+                onClick={() => scrollToSection("webinar")}
+                className="text-sm tracking-wide hover:text-muted-foreground transition-colors text-left"
+              >
+                Вебинар
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
