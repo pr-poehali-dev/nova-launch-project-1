@@ -18,28 +18,28 @@ export function Header() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <a href="#" className="font-serif text-2xl lg:text-3xl font-light tracking-wide">
-            Галерист
+            EnglishBase
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button
-              onClick={() => scrollToSection("artists")}
+              onClick={() => scrollToSection("vocabulary")}
               className="text-sm tracking-wide hover:text-muted-foreground transition-colors"
             >
-              Художники
+              Слова
             </button>
             <button
-              onClick={() => scrollToSection("works")}
+              onClick={() => scrollToSection("adjectives")}
               className="text-sm tracking-wide hover:text-muted-foreground transition-colors"
             >
-              Работы
+              Прилагательные
             </button>
             <button
-              onClick={() => scrollToSection("about")}
+              onClick={() => scrollToSection("pronouns")}
               className="text-sm tracking-wide hover:text-muted-foreground transition-colors"
             >
-              О нас
+              Местоимения
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -65,22 +65,22 @@ export function Header() {
           <nav className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col gap-4">
               <button
-                onClick={() => scrollToSection("artists")}
+                onClick={() => scrollToSection("vocabulary")}
                 className="text-sm tracking-wide hover:text-muted-foreground transition-colors text-left"
               >
-                Художники
+                Слова
               </button>
               <button
-                onClick={() => scrollToSection("works")}
+                onClick={() => scrollToSection("adjectives")}
                 className="text-sm tracking-wide hover:text-muted-foreground transition-colors text-left"
               >
-                Работы
+                Прилагательные
               </button>
               <button
-                onClick={() => scrollToSection("about")}
+                onClick={() => scrollToSection("pronouns")}
                 className="text-sm tracking-wide hover:text-muted-foreground transition-colors text-left"
               >
-                О нас
+                Местоимения
               </button>
               <button
                 onClick={() => scrollToSection("contact")}

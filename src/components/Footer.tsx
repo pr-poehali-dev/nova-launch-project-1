@@ -4,9 +4,9 @@ export function Footer() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-8">
           <div>
-            <h3 className="font-serif text-2xl font-light mb-4">Галерист</h3>
+            <h3 className="font-serif text-2xl font-light mb-4">EnglishBase</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Связываем выдающихся художников со взыскательными коллекционерами с 2020 года.
+              Платформа для начинающих изучать английский язык — всё в одном месте.
             </p>
           </div>
 
@@ -14,18 +14,18 @@ export function Footer() {
             <h4 className="text-sm font-medium mb-4 tracking-wide">Разделы</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <a href="#artists" className="hover:text-foreground transition-colors">
-                  Художники
+                <a href="#vocabulary" className="hover:text-foreground transition-colors">
+                  Словарь по категориям
                 </a>
               </li>
               <li>
-                <a href="#works" className="hover:text-foreground transition-colors">
-                  Работы
+                <a href="#adjectives" className="hover:text-foreground transition-colors">
+                  600+ прилагательных
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:text-foreground transition-colors">
-                  О нас
+                <a href="#pronouns" className="hover:text-foreground transition-colors">
+                  Местоимения
                 </a>
               </li>
               <li>
@@ -50,8 +50,8 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@galerist.art" className="hover:text-foreground transition-colors">
-                  hello@galerist.art
+                <a href="mailto:hello@englishbase.ru" className="hover:text-foreground transition-colors">
+                  hello@englishbase.ru
                 </a>
               </li>
             </ul>
@@ -59,7 +59,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Галерист. Все права защищены.</p>
+          <p>&copy; {new Date().getFullYear()} EnglishBase. Все права защищены.</p>
         </div>
       </div>
     </footer>

@@ -1,11 +1,11 @@
 export function ArtSpaces() {
   return (
-    <section className="py-16 lg:py-24 bg-background">
+    <section className="py-16 lg:py-24 bg-muted/30">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="mb-12 text-center">
-          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-4">Где живёт искусство</h2>
+          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-4">590 слов для начинающих</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Исследуйте пространства, где процветает творчество и обретают дом шедевры
+            Базовый словарный запас, который нужен в реальной жизни — по категориям с переводом
           </p>
         </div>
 
@@ -13,15 +13,15 @@ export function ArtSpaces() {
           <div className="group overflow-hidden rounded-lg">
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="/modern-contemporary-art-gallery-white-walls.jpg"
-                alt="Современная галерея"
+                src="/fine-art-portrait-photography.jpg"
+                alt="Люди и семья"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-2xl font-light mb-2">Современные галереи</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Минималистичные пространства, созданные для демонстрации современного искусства во всей его красоте
+              <h3 className="font-serif text-2xl font-light mb-2">Люди и семья</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                man, woman, boy, girl, child, friend, family, mother, father, brother, sister...
               </p>
             </div>
           </div>
@@ -29,15 +29,15 @@ export function ArtSpaces() {
           <div className="group overflow-hidden rounded-lg">
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="/classical-museum-grand-architecture-paintings.jpg"
-                alt="Классический музей"
+                src="/abstract-colorful-painting-modern-art.jpg"
+                alt="Действия и глаголы"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-2xl font-light mb-2">Исторические музеи</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Величественные институции, хранящие столетия художественного наследия и культурных сокровищ
+              <h3 className="font-serif text-2xl font-light mb-2">Действия</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                be, have, go, come, see, eat, drink, read, write, play, work, study, sleep...
               </p>
             </div>
           </div>
@@ -45,15 +45,15 @@ export function ArtSpaces() {
           <div className="group overflow-hidden rounded-lg">
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="/artist-studio-workspace-with-paintings-easel.jpg"
-                alt="Мастерская художника"
+                src="/digital-art-abstract-colorful-design.jpg"
+                alt="Места и вещи"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-2xl font-light mb-2">Мастерские художников</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Камерные творческие пространства, где вдохновение превращается в осязаемые произведения искусства
+              <h3 className="font-serif text-2xl font-light mb-2">Места и предметы</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                house, school, book, pen, apple, water, dog, cat, car, city, country...
               </p>
             </div>
           </div>
@@ -61,15 +61,15 @@ export function ArtSpaces() {
           <div className="group overflow-hidden rounded-lg">
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="/outdoor-sculpture-garden-with-modern-art.jpg"
-                alt="Парк скульптур"
+                src="/abstract-minimalist-painting.jpg"
+                alt="Время и место"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-2xl font-light mb-2">Парки скульптур</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Выставки под открытым небом, где искусство гармонирует с природой и ландшафтом
+              <h3 className="font-serif text-2xl font-light mb-2">Время и место</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                now, then, here, there, always, never, sometimes, day, night, time...
               </p>
             </div>
           </div>
@@ -77,15 +77,15 @@ export function ArtSpaces() {
           <div className="group overflow-hidden rounded-lg">
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="/luxury-private-art-collection-room.jpg"
-                alt="Частная коллекция"
+                src="/mixed-media-collage-art.jpg"
+                alt="Числа и вопросы"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-2xl font-light mb-2">Частные коллекции</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Персональные пространства, демонстрирующие страсть взыскательных коллекционеров к изящному искусству
+              <h3 className="font-serif text-2xl font-light mb-2">Числа и вопросы</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                one–ten, who, what, where, when, why, how, yes, no, and, or, but...
               </p>
             </div>
           </div>
@@ -93,15 +93,15 @@ export function ArtSpaces() {
           <div className="group overflow-hidden rounded-lg">
             <div className="aspect-[4/3] overflow-hidden">
               <img
-                src="/contemporary-exhibition-space-art-show.jpg"
-                alt="Выставочное пространство"
+                src="/contemporary-abstract-colorful-art.jpg"
+                alt="Предлоги и союзы"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="mt-4">
-              <h3 className="font-serif text-2xl font-light mb-2">Выставочные пространства</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Динамичные площадки для сменных экспозиций, объединяющие сообщества вокруг искусства
+              <h3 className="font-serif text-2xl font-light mb-2">Предлоги и союзы</h3>
+              <p className="text-muted-foreground leading-relaxed text-sm">
+                in, on, under, over, next to, between, with, without, for, from, to, because...
               </p>
             </div>
           </div>

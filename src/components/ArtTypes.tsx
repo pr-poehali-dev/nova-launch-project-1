@@ -1,105 +1,105 @@
 import { Card, CardContent } from "@/components/ui/card";
 
-interface ArtType {
+interface WordCategory {
   name: string;
   description: string;
   image: string;
   examples: string;
 }
 
-const artTypes: ArtType[] = [
+const wordCategories: WordCategory[] = [
   {
-    name: "Живопись",
+    name: "Существительные",
     description:
-      "Практика нанесения краски, пигмента, цвета или другого материала на твёрдую поверхность. От масла и акрила до акварели и гуаши.",
+      "Слова, обозначающие людей, предметы и места. Основа любого предложения на английском языке.",
     image: "/oil-painting-canvas-classical-style.jpg",
-    examples: "Масло, Акрил, Акварель, Фреска",
+    examples: "man, woman, house, school, book, dog",
   },
   {
-    name: "Скульптура",
+    name: "Глаголы",
     description:
-      "Трёхмерное искусство, создаваемое путём формования или комбинирования материалов. От классического мрамора до современных инсталляций.",
-    image: "/marble-sculpture-classical-statue.jpg",
-    examples: "Камень, Бронза, Дерево, Глина",
+      "Слова действия — основа общения. Без глаголов невозможно построить ни одного предложения.",
+    image: "/abstract-colorful-painting-modern-art.jpg",
+    examples: "be, have, go, see, eat, work, love",
   },
   {
-    name: "Фотография",
+    name: "Прилагательные",
     description:
-      "Искусство захвата света для создания изображений. От документальной до художественной, от аналоговой до цифровой.",
-    image: "/fine-art-black-white-photography.jpg",
-    examples: "Портрет, Пейзаж, Абстракция, Документалистика",
-  },
-  {
-    name: "Цифровое искусство",
-    description:
-      "Искусство, созданное с помощью цифровых технологий. Включает цифровую живопись, 3D-моделирование, генеративное искусство и NFT.",
+      "Более 600 слов для описания людей, предметов и чувств с переводом и примерами предложений.",
     image: "/digital-art-abstract-colorful-design.jpg",
-    examples: "3D-арт, Цифровая живопись, Генеративное, NFT",
+    examples: "happy, big, beautiful, new, clean, hot",
   },
   {
-    name: "Гравюра",
+    name: "Наречия",
     description:
-      "Процесс создания произведений путём печати, обычно на бумаге. Включает офорт, литографию и шелкографию.",
-    image: "/printmaking-woodblock-print-art.jpg",
-    examples: "Офорт, Литография, Шелкография, Ксилография",
+      "Слова, уточняющие действия и описания. Отвечают на вопросы «как?», «когда?» и «где?».",
+    image: "/abstract-minimalist-painting.jpg",
+    examples: "now, very, always, fast, here, never",
   },
   {
-    name: "Графика",
+    name: "Местоимения",
     description:
-      "Основа визуального искусства, использующая линии на поверхности. От карандашных набросков до угольных шедевров.",
+      "Личные, объектные, притяжательные и другие типы местоимений с подробными примерами использования.",
+    image: "/fine-art-black-white-photography.jpg",
+    examples: "I, you, he, she, my, your, this, who",
+  },
+  {
+    name: "Предлоги и союзы",
+    description:
+      "Служебные слова, которые связывают части предложения и указывают на отношения между ними.",
     image: "/charcoal-drawing-portrait-sketch.jpg",
-    examples: "Карандаш, Уголь, Тушь, Пастель",
+    examples: "in, on, with, for, and, but, because",
   },
   {
-    name: "Керамика",
+    name: "Числительные",
     description:
-      "Искусство создания объектов из глины и других материалов. От функциональной посуды до скульптурных работ.",
+      "Числа от одного до десяти и далее — необходимая база для счёта, дат и повседневных разговоров.",
+    image: "/mixed-media-collage-art.jpg",
+    examples: "one, two, three, four, five, ten",
+  },
+  {
+    name: "Вопросительные слова",
+    description:
+      "Ключевые слова для построения любого вопроса на английском языке.",
     image: "/ceramic-pottery-handmade-vase.jpg",
-    examples: "Гончарство, Фарфор, Шамот, Раку",
+    examples: "who, what, where, when, why, how",
   },
   {
-    name: "Смешанная техника",
+    name: "Разговорные фразы",
     description:
-      "Работы, сочетающие различные материалы и техники. Объединяет традиционные и современные методы.",
-    image: "/mixed-media-collage-contemporary-art.jpg",
-    examples: "Коллаж, Ассамбляж, Инсталляция, Мультимедиа",
-  },
-  {
-    name: "Текстильное искусство",
-    description:
-      "Искусство, создаваемое из ткани, волокна и нити. От традиционного ткачества до современных скульптур из волокна.",
-    image: "/textile-art-woven-tapestry.jpg",
-    examples: "Ткачество, Вышивка, Квилтинг, Файбер-арт",
+      "Простые практические фразы для повседневного общения, которые можно применять сразу.",
+    image: "/contemporary-abstract-colorful-art.jpg",
+    examples: "Hello, Thank you, Please, I am..., I like...",
   },
 ];
 
 export function ArtTypes() {
   return (
-    <section className="py-24 px-6 bg-muted/30">
+    <section id="vocabulary" className="py-24 px-6 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl mb-4 text-balance">Изучайте формы искусства</h2>
+          <h2 className="font-serif text-4xl md:text-5xl mb-4 text-balance">Изучайте категории слов</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Откройте для себя разнообразие техник и материалов, которые художники используют для выражения творческого видения
+            590+ слов для начинающих, разбитых по категориям — с переводом и примерами предложений
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {artTypes.map((type) => (
-            <Card key={type.name} className="overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative h-64 w-full">
+          {wordCategories.map((cat) => (
+            <Card key={cat.name} className="overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="relative h-48 w-full">
                 <img
-                  src={type.image}
-                  alt={`Пример: ${type.name}`}
+                  src={cat.image}
+                  alt={cat.name}
                   className="w-full h-full object-cover"
                 />
               </div>
               <CardContent className="p-6">
-                <h3 className="font-serif text-2xl mb-3">{type.name}</h3>
-                <p className="text-muted-foreground mb-4 leading-relaxed">{type.description}</p>
+                <h3 className="font-serif text-2xl mb-3">{cat.name}</h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">{cat.description}</p>
                 <div className="pt-4 border-t">
-                  <p className="text-sm font-medium mb-1">Популярные формы:</p>
-                  <p className="text-sm text-muted-foreground">{type.examples}</p>
+                  <p className="text-sm font-medium mb-1">Примеры слов:</p>
+                  <p className="text-sm text-muted-foreground italic">{cat.examples}</p>
                 </div>
               </CardContent>
             </Card>

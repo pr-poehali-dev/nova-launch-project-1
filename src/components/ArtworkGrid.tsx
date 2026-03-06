@@ -1,76 +1,62 @@
-interface Artwork {
-  title: string;
-  artist: string;
-  year: string;
-  image: string;
+interface Adjective {
+  word: string;
+  translation: string;
+  example: string;
+  category: string;
 }
 
-const artworks: Artwork[] = [
-  {
-    title: "Хроматический резонанс",
-    artist: "Елена Васильева",
-    year: "2024",
-    image: "/abstract-colorful-painting-modern-art.jpg",
-  },
-  {
-    title: "Городские фрагменты",
-    artist: "Марк Ченов",
-    year: "2024",
-    image: "/contemporary-sculpture-installation.jpg",
-  },
-  {
-    title: "Слои памяти",
-    artist: "София Андерсон",
-    year: "2023",
-    image: "/mixed-media-collage-art.jpg",
-  },
-  {
-    title: "Серия «Идентичность» №7",
-    artist: "Яков Окунев",
-    year: "2024",
-    image: "/fine-art-portrait-photography.jpg",
-  },
-  {
-    title: "Эфемерные пространства",
-    artist: "Елена Васильева",
-    year: "2023",
-    image: "/abstract-minimalist-painting.jpg",
-  },
-  {
-    title: "Цифровая природа",
-    artist: "Марк Ченов",
-    year: "2024",
-    image: "/digital-art-nature-inspired.jpg",
-  },
+const adjectives: Adjective[] = [
+  { word: "happy", translation: "счастливый", example: "I am happy.", category: "Чувства" },
+  { word: "sad", translation: "грустный", example: "She is sad.", category: "Чувства" },
+  { word: "big", translation: "большой", example: "This house is big.", category: "Размер" },
+  { word: "small", translation: "маленький", example: "The dog is small.", category: "Размер" },
+  { word: "tall", translation: "высокий", example: "He is tall.", category: "Размер" },
+  { word: "beautiful", translation: "красивый", example: "She is beautiful.", category: "Внешность" },
+  { word: "new", translation: "новый", example: "I bought a new book.", category: "Состояние" },
+  { word: "old", translation: "старый", example: "This chair is old.", category: "Состояние" },
+  { word: "clean", translation: "чистый", example: "The room is clean.", category: "Состояние" },
+  { word: "hot", translation: "горячий", example: "The tea is hot.", category: "Температура" },
+  { word: "cold", translation: "холодный", example: "The water is cold.", category: "Температура" },
+  { word: "fast", translation: "быстрый", example: "The car is fast.", category: "Скорость" },
 ];
 
 export function ArtworkGrid() {
   return (
-    <section id="works" className="py-16 lg:py-24">
+    <section id="adjectives" className="py-16 lg:py-24">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="mb-12">
-          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-4">Избранные работы</h2>
-          <p className="text-muted-foreground text-lg">Подборка произведений из текущей экспозиции</p>
+          <h2 className="font-serif text-4xl lg:text-5xl font-light mb-4">600+ прилагательных</h2>
+          <p className="text-muted-foreground text-lg">
+            Полный список с переводом и примерами — от описания людей до характеристик предметов
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
-          {artworks.map((artwork, index) => (
-            <div key={index} className="group cursor-pointer overflow-hidden bg-card">
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={artwork.image}
-                  alt={artwork.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+          {adjectives.map((adj, index) => (
+            <div key={index} className="group bg-card border rounded-lg p-6 hover:shadow-md transition-shadow">
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <h3 className="font-serif text-2xl font-light">{adj.word}</h3>
+                  <p className="text-muted-foreground mt-1">{adj.translation}</p>
+                </div>
+                <span className="text-xs bg-muted px-2 py-1 rounded-full text-muted-foreground">
+                  {adj.category}
+                </span>
               </div>
-              <div className="p-6">
-                <h3 className="font-serif text-xl font-light mb-1">{artwork.title}</h3>
-                <p className="text-sm text-muted-foreground">
-                  {artwork.artist}, {artwork.year}
-                </p>
+              <div className="border-t pt-3 mt-3">
+                <p className="text-sm italic text-muted-foreground">→ {adj.example}</p>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center p-8 bg-muted/40 rounded-xl">
+          <p className="font-serif text-2xl font-light mb-2">
+            Это лишь начало — всего в списке более 600 прилагательных
+          </p>
+          <p className="text-muted-foreground">
+            Прилагательные о людях, чувствах, вещах, цветах, еде, размерах, характере и многом другом
+          </p>
         </div>
       </div>
     </section>
